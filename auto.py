@@ -6,6 +6,7 @@ auth = twitter.OAuthHandler(constant.CONSUMER_KEY, constant.CONSUMER_SECRET)
 auth.set_access_token(constant.ACCESS_KEY, constant.ACCESS_SECRET)
 api = twitter.API(auth)
 
+#heroku deploy
 
 def twitter_bot(username, delay):
     while True:
